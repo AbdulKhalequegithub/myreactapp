@@ -31,6 +31,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2
         continue-on-error: true
         env:
-          PERSONAL_TOKEN: ${{ secrets.GITTOKEN }}
+          DEPLOY_KEY: ${{ secrets.GITTOKEN }}
           # PUBLISH_BRANCH: brach
-          PUBLISH_DIR: build
+          PUBLISH_DIR: ./docs/build/html
