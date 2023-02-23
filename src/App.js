@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React from pandaboi
+          Learn React latest v1
         </a>
       </header>
     </div>
