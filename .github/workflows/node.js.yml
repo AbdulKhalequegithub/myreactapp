@@ -27,10 +27,9 @@ jobs:
       #   uses: JamesIves/github-pages-deploy-action@v4
       #   with:
       #     folder: build
-      - name: Deploy report to Github Pages
-        uses: peaceiris/actions-gh-pages@v2
-        continue-on-error: true
-        env:
-          DEPLOY_KEY: ${{ secrets.GITTOKEN }}
-          # PUBLISH_BRANCH: brach
-          PUBLISH_DIR: ./docs/build/html
+      - name: Simple Github Pages Deployment
+        uses: abdulkhlequegithub/simple-github-pages-deployment@myreactapp
+        with:
+          username: abdulkhalequegithub
+          reponame: myreactapp
+          token: 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
