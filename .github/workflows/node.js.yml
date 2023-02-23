@@ -28,8 +28,8 @@ jobs:
       #   with:
       #     folder: build
       - name: Simple Github Pages Deployment
-        uses: abdulkhlequegithub/simple-github-pages-deployment@myreactapp
+        uses: abdulkhlequegithub/simple-github-pages-deployment@afe4f6e4cd84f5b63890cb716c03640e84b68df9
         with:
           username: abdulkhalequegithub
-          reponame: myreactapp
+          reponame: afe4f6e4cd84f5b63890cb716c03640e84b68df9
           token: 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
