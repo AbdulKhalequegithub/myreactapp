@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
+    GITHUB_TOKEN Permissions:
       actions: read|write|none
       checks: read|write|none
       contents: read|write|none
