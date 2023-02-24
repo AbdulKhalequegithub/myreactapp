@@ -27,12 +27,10 @@ jobs:
       #   uses: JamesIves/github-pages-deploy-action@v4
       #   with:
       #     folder: build
-      - name: Push changes cicd
-        uses: ptienchuan/deploy-github-pages-action@master
+      - name: Deploy report to Github Pages
+        uses: peaceiris/actions-gh-pages@v2
+        continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUb_TOKEN }}
-        with:
-          source-directory: "build"
-          target-branch: "gh-pages-2"
-          user-name: "abdulkhalequegithub"
-          user-email: "abdul.khaleque@clouddrove.com"
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: /build
