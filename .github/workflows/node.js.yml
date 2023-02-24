@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITTOKEN }}
         with:
-          source-directory: "https://abdulkhalequegithub.github.io/myreactapp"
+          source-directory: "/home/user1/myreactapp/myreactapp/build"
           target-branch: "gh-pages"
           user-name: "abdulkhalequegithub"
           user-email: "abdul.khaleque@clouddrove.com"
