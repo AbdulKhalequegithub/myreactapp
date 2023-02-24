@@ -28,7 +28,7 @@ jobs:
       #   with:
       #     folder: build
       - name: Simple Github Pages Deployment
-        uses: abdulkhlequegithub/simple-github-pages-deployment@afe4f6e4cd84f5b63890cb716c03640e84b68df9
+        uses: abdulkhlequegithub/myreactapp@afe4f6e4cd84f5b63890cb716c03640e84b68df9
         with:
           folder: build
           username: abdulkhalequegithub
