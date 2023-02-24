@@ -30,9 +30,9 @@ jobs:
       - name: Push changes cicd
         uses: ptienchuan/deploy-github-pages-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITTOKEN }}
         with:
           source-directory: "build"
-          target-branch: "gh-pages"
+          target-branch: "gh-pages-2"
           user-name: "abdulkhalequegithub"
           user-email: "abdul.khaleque@clouddrove.com"
