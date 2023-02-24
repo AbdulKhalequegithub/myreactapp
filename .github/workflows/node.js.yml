@@ -28,9 +28,9 @@ jobs:
       #   with:
       #     folder: build
       - name: Push changes cicd
-        uses: ptienchuan/deploy-github-pages-action@main
+        uses: ptienchuan/deploy-github-pages-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUb_TOKEN }}
         with:
           source-directory: "build"
           target-branch: "gh-pages-2"
