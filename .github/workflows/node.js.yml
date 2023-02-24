@@ -27,10 +27,10 @@ jobs:
       #   uses: JamesIves/github-pages-deploy-action@v4
       #   with:
       #     folder: build
-      - name: Push changes
+      - name: Push changes cicd
         uses: ptienchuan/deploy-github-pages-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           source-directory: "build"
           target-branch: "gh-pages"
